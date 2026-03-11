@@ -1,0 +1,156 @@
+{
+  "projectType": "framework",
+  "projectName": "Minestom",
+  "projectDescription": "A lightweight, high-performance library for building custom Minecraft 1.21 server software from scratch.",
+  "theme": "aspen",
+  "primaryColor": "#f76e61",
+  "lightColor": "#fb75a4",
+  "darkColor": "#a04d69",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/instances",
+              "concepts/events",
+              "concepts/entities",
+              "concepts/blocks",
+              "concepts/chunks",
+              "concepts/networking"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-server",
+              "guides/handling-events",
+              "guides/custom-blocks",
+              "guides/custom-entities",
+              "guides/commands",
+              "guides/inventories",
+              "guides/world-generation",
+              "guides/extensions"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/performance",
+              "advanced/multithreading",
+              "advanced/data-structures",
+              "advanced/protocol",
+              "advanced/testing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core",
+            "pages": [
+              "api/minecraftserver",
+              "api/serverprocess",
+              "api/instance-manager",
+              "api/connection-manager",
+              "api/scheduler"
+            ]
+          },
+          {
+            "group": "Instances & Worlds",
+            "pages": [
+              "api/instance",
+              "api/chunk",
+              "api/block",
+              "api/world-border"
+            ]
+          },
+          {
+            "group": "Entities",
+            "pages": [
+              "api/entity",
+              "api/living-entity",
+              "api/player",
+              "api/entity-metadata"
+            ]
+          },
+          {
+            "group": "Events",
+            "pages": [
+              "api/event-handler",
+              "api/event-node",
+              "api/event-filter"
+            ]
+          },
+          {
+            "group": "Commands",
+            "pages": [
+              "api/command-manager",
+              "api/command-builder",
+              "api/arguments"
+            ]
+          },
+          {
+            "group": "Inventory & Items",
+            "pages": [
+              "api/inventory",
+              "api/item-stack",
+              "api/material"
+            ]
+          },
+          {
+            "group": "Network",
+            "pages": [
+              "api/packets",
+              "api/player-connection",
+              "api/packet-listeners"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-threaded chunk and entity handling",
+    "Instance-based world system (no file I/O by default)",
+    "Event-driven architecture with flexible node system",
+    "Modern command API using Brigadier",
+    "Custom block and entity handlers",
+    "Zero vanilla features - complete API control",
+    "High performance with minimal overhead",
+    "Maven Central distribution with snapshot support"
+  ],
+  "publicApiSurface": [
+    "MinecraftServer.init()",
+    "MinecraftServer.start(String, int)",
+    "Instance / InstanceContainer",
+    "Entity / LivingEntity / Player",
+    "EventHandler / EventNode",
+    "CommandManager / Command",
+    "Block / BlockHandler",
+    "Chunk / DynamicChunk",
+    "ItemStack / Inventory",
+    "ServerProcess",
+    "ConnectionManager",
+    "SchedulerManager",
+    "GlobalEventHandler",
+    "PacketListenerManager",
+    "RecipeManager",
+    "AdvancementManager",
+    "BossBarManager",
+    "TeamManager"
+  ]
+}
